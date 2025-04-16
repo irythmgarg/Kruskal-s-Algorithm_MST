@@ -34,6 +34,22 @@ Kruskal’s algorithm works by:
 
 ---
 
+🧠 Concepts Used
+Disjoint Set Union (DSU) / Union-Find with:
+Path Compression (in find)
+Union by Rank
+Edge List Conversion from Adjacency List
+Edge Sorting
+Cycle Detection
+
+📊 Time & Space Complexity
+Time Complexity: O(E log E), where E is the number of edges (sorting step dominates).
+Space Complexity: O(V + E)
+
+📎 Notes
+Always check if the number of edges in the MST is exactly V - 1 to ensure correctness.
+Kruskal is ideal for sparse graphs, unlike Prim’s which can be faster for dense graphs.
+
 ## ✅ Example Usage
 
 ```cpp
@@ -51,3 +67,7 @@ adj[3].push_back({1, 4});
 Solution sol;
 int mst_cost = sol.spanningTree(V, adj);
 cout << "MST Cost: " << mst_cost << endl;
+
+
+👨‍💻 Author
+Your Name – @irythmgarg [Ridham Garg]
